@@ -1,0 +1,59 @@
+Index/About
+  Introduction to who I am
+  My interests
+    Productivity hacking
+  Research interests
+  Information on contacting me (drop me a line)
+
+Now
+  What I am doing at this point in my life
+  music I am listening to
+
+Blog
+  Add posts on how to build a website using jekyll-bootstrap
+  add ipynb on ubuntu with anaconda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index page
+    tabs on top of page to
+        resume
+        contact
+        projects
+    name some of my interests
+        music
+        trivia
+        running
+        webdev
+
+Contact
+    mailto link
+    facebook
+    github page
+    
+
+Using Roboto Font

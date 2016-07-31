@@ -1,0 +1,206 @@
+<html>
+	<head>
+		<title>HTML Crash Course </title>
+		<link rel="stylesheet" type="text/css" href="../../style.css">
+	</head>
+	<body>
+		<h1> The first HTML I've ever written (according to most authorities) </h1>
+			<p> This is text is smaller. I enjoy learning about HTML, because it hopefully
+			will allow me to begin writing websites.</p>
+			<p> Markup language is somewhat like coding, but not. </p>
+			<p> To view the source for these text effects, right click and select, "View Source" </p>
+		<h2> What HTML Does </h2>
+			<p> HTML allows you to arrange text with tags. </p>
+			<p> For example, when I want to italicize a word, i use the "i" tag, which looks like <i> this. </i> </p>
+			<p> Bolding works similarly, like <b> this. </b> </p>
+			<p> The same deal for superscripts, which look like t<sup>his</sup> and subscripts, like<sub>so</sub>. </p>
+			<p> To break a paragraph in half,<br /> use the break tag. </p>
+			<p> if something is unrelated to something else, maybe use a horizontal rule. <hr /> Refrigerator. </p>
+		<h2 id = "tags"> Semantic Tags (Make things understandable) </h2>
+			<p> One can use the strong tag to indicate importance, such as: <strong> This language should only be used
+			by professionals. </strong> </p>
+			<p> Emphasis can be added by using the em tag like <em> so. </em> This helps the reader understand emphasis,
+			and has the added benefits of being given emphasis by screen readers </p>
+			<p> One can also make blockquotes inside a paragraph. </p>
+			<blockquote> 
+				<p> Once upon a time, Ari started writing in HTML, and he felt that it was very easy,
+			because he couldn't see the long nights, terrible days and hard pillows ahead of him. </p> 
+			</blockquote> 
+			<p> Likewise, if the quote is shorter, they can use quotes <q>like so!</q>, said Ari. </p>
+			<p> If you like acronyms, <acronym title = "you can use them like this"> YCUTLT </acronym>, and
+			if you like abbreviations, <abbr title = "You can totally use them"> Totes use 'em! </abbr> After HTML4,
+			you generally use the abbr tag for both abbreviations and acronyms, since they serve similar purposes. </p>
+			<p> Citing a source? Use the cite tag from <cite> HTML5</cite>, which renders the text into italics. </p>
+			<p> The <dfn> dfn </dfn> or define tag is used the first time a term is explained. Some browsers will change
+				its appearance, others will not.</p>
+			<p> If you are interested in provided the address of the author of the page, you would use the address tag,
+			which displays the content in italics. For example, this page's author lives at <address> 3544 Prescott House,
+			East Quadrangle, Ann Arbor, MI, 48109, United States, North America, Northwestern Hemisphere, Earth, 
+			Solar System, Milky Way Galaxy, The Known Universe. </address> </p>
+			<p> If I wanted to show you what used to be in this document, I might use the del tag. That would be a <del> great idea </del>
+			<ins> bad idea </ins>, so instead I show you how the ins or insert tag works as well. </p>
+			<p> The strikethrough tag is used to show information that is no longer relevant. For example, my height is 5 feet <s> 10 </s>
+			10.25 inches tall.
+		<h2> Lists! </h2>
+			<p> There are three types of lists. I will invoke the first to explain the others.
+			<ol>
+				<li>Ordered lists - numbered, self-explanatory. This is an ordered list. </li>
+				<li>Unordered lists - bullet points </li>
+				<ul>
+					<li> Bullet points. </li>
+					<li> You can put lists inside other lists, like this. </li>
+				</ul>
+				<li>Definition lists - a list of terms with definitions after them. </li>
+				<dl>
+					<dt> The term itself. </dt>
+					<dd> The definition for that term. </dd>
+				</dl>
+			</ol>
+		<h2 id = "links"> Links! </h2>
+			<p> In HTML, you can link to other websites as well. One first uses the "a" tag, 
+			and then href, and the link, as well as as mouseover text. Example:
+			<a href="http://netflix.com">My favorite website</a> </p>
+			<p> For sites on the same domain, <a href=otherpage.html>Other Page</a>
+			<p> I can email someone directly by using the "mailto:" tag. For example, you can
+			email example at example dot com by using <a href = "mailto:example@example.com">this.</a> </p>
+			<p> A target link opens a link in a new window. Warn the user this will be the case.
+			For example, here is <a href = "http://target.com" target="_blank">Target</a>'s 
+			website. It will open in a new window. </p>
+			<p>One last cool thing about links. They can link to a specific part of this page. For example,
+			if you wanted to see the section of <a href = "#links">Links</a>, you could click here. To go 
+			to the section on <a href = "#tags">Tags</a>, click here. Ain't that cool?</p>
+			<p><a href = "#top">Top</a></p>
+		<h2 id = "images"> Images! </h2>
+			<p> Adding images is easy. we have a image folder, so we say "src" for it. Alt text provides
+			text describing the image for screen readers. Titles are for when we mouse over.
+			<figure>
+			<img src = "../../images/Clearing Winter Storm.png" title = "This is an Ansel Adams photo." width =
+			"600" height = "450"/>
+			<figcaption> Ansel really outdid himself, didn't he. </figcaption>
+			</figure>
+			<p> Rules for which file format </p>
+			<ol>
+				<li> If it has colors(lots), use a JPEG </li>
+				<li> Photos with the same FLAT color should be GIFs (pronounced two ways...) </li>
+		<h2 id = "tables"> Tables! </h2>
+			<table>
+				<thead>
+				<tr>
+					<th></th>
+					<th scope = "column">Heading</th>
+					<th scope = "column">Heading2</th>
+					<th scope = "column">Heading3</th>
+					<th scope = "column">Heading4</th>
+					<th scope = "column">Heading5</th>
+					<th scope = "column">Heading6</th>
+					<th scope = "column">Heading7</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr> 
+					<th scope = "row">Row 1</th>
+					<td> This </td>
+					<td> is </td>
+					<td> another</td>
+					<td> cool</td>
+					<td> thing</td>
+					<td> to</td>
+					<td> do.</td>
+				</tr>
+				<tr>
+					<th scope = "row">Row 2</th>
+					<td> Now </td>
+					<td> you</td>
+					<td> can</td>
+					<td> this</td>
+					<td> is</td>
+					<td> a </td>
+					<td> table</td>
+				</tr>
+				<tr>
+					<th scope = "row">Row 3</th>
+					<td rowspan = "2" colspan = "2"> 183</td>
+					<td rowspan = "2" colspan = "2"> 115</td>
+					<td rowspan = "2"colspan = "2"> 244</td>
+					<td rowspan = "2" colspan = "2">324</td>
+				</tr>
+				<tr></tr>
+				<tr>
+					<th scope = "row">Row 4</th>
+					<td> Now </td>
+					<td> you</td>
+					<td> can</td>
+					<td> this</td>
+					<td> is</td>
+					<td> a </td>
+					<td> table</td>
+				</tr>
+				</tbody>
+			</table>
+			<p> You can use this to make a schedule!</p>
+			<p style = "background-color: gold; font-family: Helvetica; color:darkblue ; font-size: 20px">From here on, style will be incorporated using HTML tags until I start CSS.</p>
+			<p>This line contains a <a href = "http://facebook.com"><img style = "width:20px ; length: 20px"src = "http://www.bus.umich.edu/Video/Play/block-m.jpg"/></a>link.</p>
+			<div><p>The next concept is a div, or division. These can be used with CSS to separate pieces of the page. A practical application of this is the sidebar.</p>
+			</div>
+			<p>Divs can also be made clickable by wrapping the entire thing in a tag</p>
+			<a href="../../index.html"><div style = "width:50px;height:50px;background-color:yellow"></div></a>
+			<p> Another important element is the <span style = "font-family:Futura; color:Green">span</span> tag, which can be used to selectively style certain parts of text.</p>
+			<p> Here's how basic CSS syntax looks: </p>
+			<h2> CSS! </h2>
+			<img src = "../../images/CSS.png"/>
+			<p> Semicolons are very important here, as well as brackets.</p>
+			<p> Additionally, <em>remember</em> that not all screens are designed alike, so pixel values may not be ideal for defining font size, especially on mobile devices. Therefore we have "em" units for relative font size. It says to the phone, if you use this font size normally, this is <span id = "cursive"> x </span> times bigger. </p>
+			<p>Now that we know CSS, it is now officially bad style to put style inline with text; 
+				use a <span id = "cursive"> stylesheet</span>.</p>
+			<p>We can make fancy borders for our divs as well. For example,</p>
+			<div id = "colorblock"></div>
+
+			<p>Or better represented, a table.</p>
+				<table>
+					<thead>
+						<th>Heading for a table.</th>
+					</thead>
+					<tbody>
+						<td>One cell</td>
+					</tbody>
+				</table>
+			<p>To get rounded corners, use the border-radius attribute</p>
+			<p>margin: auto is the CSS you use to tell the browser: "Hey! Make sure to set equal margins on each side of this HTML element." When the margins are equal, the object is centered. text-align: center; is how you center text elements. </p>
+			<p> CSS attributes can also be nested. If you wanted to, i.e. only modify an p inside h3, one could do: </p>
+			<code>
+			h3 p {
+			CSS CODE HERE
+			}
+			</code>
+			<p> The * operator is used to specify every HTML element</p>
+			<p>More selectors include the class and id attributes</p>
+			<ul>
+				<li>Classes are used for when you have a lot of things that need the same styling. In HTML, this is represented inside any other tag: <code> class = "classname" </code> In CSS, this looks like <code> .class {ATTRIBUTES HERE} </code></li>
+				<li>IDs are used for when you have one element that needs styling. In HTML, this looks like <code> id = "attribute" </code>, while in CSS it looks like <code> #id {CODE} </code></li>
+			</ul>
+			<p> We also have psuedo-class selectors. These are used to access elements that are not part of the document tree, like information about whether something has been clicked. The code is in the form:
+				<br/><code>selector:psuedo-class-selector{  <br/> property:value;  <br/> }</code></p>
+			<p> Some selectors are <code>a:link</code> for an unvisited link, <code>a:visited</code> for a visited link and <code>a hover</code> for a hovered-over link</p>
+			<p>The psuedo-attribute <code> nth-child </code> can be used to notate that the nth child of a parent element should be styled. </p>
+			<p>Make sure to leave a space between body :nth-child. If you don't have a space it means "find the body tag that is an nth-child". If you have a space it means "find the nth-child of the body tag". </p>
+			<h2>CSS Positioning</h2>
+			<p>There are four methods for positioning elements</p>
+			<ol>
+				<li>block: everything gets its own line, takes up full width of page</li>
+				<li>inline-block: the above, except elements can sit together</li>
+				<li>inline:makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line).</li>
+				<li>none: makes content disappear</li>
+			</ol>
+			<img title = "Explanation of the CSS layout system" src="../../images/CSSModelling.png"/>
+			<ol>
+				<li>The margin is the space around the element. A sample value is auto, which centers the element, but there are also margins for top, bottom, left and right. They can be set in the order top, right, bottom, left, i.e <code>50px 20px 30px 40px </code></li>
+				<li>The border is what the edge of the element looks like. It can be input in the order: size display-type hex-color, i.e. <code>40px dashed #FF0000</code></li>
+				<li>The padding is the space in between the content and the border, which can be made smaller or bigger. Again, values are input in top,right,bottom,left order, or if all four sides are the same, you can declare one value. Can have negative values to move in the opposite direction</li>
+				<li>Content is the element itself</li>
+			</ol>
+			<p>Floats position where elements go on the page. Simply: <code>float:right</code> </p>
+			<p><code>clear:</code> pushes other elements out of the way. Left clears everything to the left, right etc, both will clear everything on the left and right</p>
+			<h3>Absolute, relative and fixed positioning</h3>
+			<p>Elements default to static positioning if they are not styled. Absolute elements are positioned in reference to the first object that is not static. Relative positioning moves elements from where they otherwise would have landed had we had static positioning. Fixed positioning keeps the element on screen, even if you p</scroll>
+	</body>
+</html>
